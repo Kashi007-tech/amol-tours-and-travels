@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Amol Tours and Travels - Premium Pune local, airport and outstation cab services. Comfortable, reliable and on-time travel from Pune.">
+<title>Amol Tours and Travels | Pune Cab & Outstation Taxi</title>
+<style>
+:root{
+  --yellow:#ffc400; --yellow2:#ffdc55; --black:#090909; --dark:#111;
+  --card:#171717; --muted:#b7b7b7; --white:#fff; --line:#292929;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,Helvetica,sans-serif;background:var(--black);color:var(--white);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(9,9,9,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.4px}
+.logo-mark{width:42px;height:42px;border-radius:11px;background:var(--yellow);color:#000;display:grid;place-items:center;font-size:23px;box-shadow:0 0 25px rgba(255,196,0,.18)}
+.logo span{font-size:18px}.logo small{display:block;color:var(--yellow);font-size:10px;letter-spacing:2px}
+.navlinks{display:flex;gap:28px;color:#ddd;font-size:14px}
+.navlinks a:hover{color:var(--yellow)}
+.nav-cta{background:var(--yellow);color:#000;padding:11px 17px;border-radius:9px;font-weight:800}
+.menu{display:none;background:none;border:0;color:#fff;font-size:28px}
+.hero{position:relative;overflow:hidden;min-height:670px;display:flex;align-items:center;background:
+ radial-gradient(circle at 82% 35%,rgba(255,196,0,.16),transparent 30%),
+ linear-gradient(120deg,#080808 0%,#0c0c0c 55%,#14110a 100%)}
+.hero:after{content:"";position:absolute;right:-160px;bottom:-250px;width:620px;height:620px;border:90px solid rgba(255,196,0,.045);border-radius:50%}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center;position:relative;z-index:2}
+.badge{display:inline-flex;gap:8px;align-items:center;color:#111;background:var(--yellow);padding:7px 12px;border-radius:99px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:1px;margin-bottom:20px}
+h1{font-size:clamp(43px,6vw,72px);line-height:1.02;letter-spacing:-2.8px;margin-bottom:22px}
+h1 em{font-style:normal;color:var(--yellow)}
+.hero p{font-size:18px;color:#c8c8c8;max-width:610px;margin-bottom:30px}
+.actions{display:flex;gap:13px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 20px;border-radius:10px;font-weight:850;border:1px solid var(--line)}
+.btn-primary{background:var(--yellow);color:#000;border-color:var(--yellow)}
+.btn-primary:hover{background:var(--yellow2)}
+.btn-outline{background:#111;color:#fff}
+.btn-outline:hover{border-color:var(--yellow);color:var(--yellow)}
+.trust{display:flex;gap:24px;margin-top:30px;flex-wrap:wrap;color:#aaa;font-size:13px}
+.trust strong{color:#fff;display:block;font-size:15px}
+.booking-card{background:rgba(23,23,23,.94);border:1px solid #333;border-radius:20px;padding:28px;box-shadow:0 22px 70px rgba(0,0,0,.5)}
+.booking-card h2{font-size:25px;margin-bottom:6px}
+.booking-card>p{color:#999;font-size:13px;margin-bottom:22px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}
+label{font-size:11px;color:#aaa;text-transform:uppercase;letter-spacing:.8px}
+input,select,textarea{width:100%;padding:13px 12px;background:#0d0d0d;border:1px solid #343434;border-radius:9px;color:#fff;outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--yellow)}
+.form-btn{width:100%;margin-top:15px;padding:14px;border:0;border-radius:9px;background:var(--yellow);font-weight:900;font-size:15px;cursor:pointer}
+section{padding:88px 0}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:36px}
+.eyebrow{color:var(--yellow);font-size:12px;text-transform:uppercase;letter-spacing:2px;font-weight:900;margin-bottom:8px}
+h2{font-size:38px;line-height:1.12;letter-spacing:-1px}
+.section-head p{color:#aaa;max-width:510px}
+.services{background:#0d0d0d}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:25px;transition:.2s}
+.card:hover{transform:translateY(-4px);border-color:#514100}
+.icon{width:46px;height:46px;display:grid;place-items:center;border-radius:12px;background:#261f05;color:var(--yellow);font-size:22px;margin-bottom:17px}
+.card h3{font-size:19px;margin-bottom:7px}.card p{color:#999;font-size:14px}
+.destinations{background:#0a0a0a}
+.dest-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.dest{border:1px solid var(--line);padding:18px;border-radius:12px;background:#111;font-weight:800}
+.dest span{display:block;color:var(--yellow);font-size:12px;margin-top:4px;font-weight:500}
+.fleet{background:linear-gradient(180deg,#111 0,#0b0b0b 100%)}
+.fleet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.fleet-card{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#141414}
+.car-visual{height:160px;background:linear-gradient(135deg,#202020,#0b0b0b);display:grid;place-items:center;font-size:66px}
+.fleet-body{padding:20px}.fleet-body h3{margin-bottom:3px}.fleet-body p{font-size:13px;color:#999}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.tag{font-size:11px;border:1px solid #383838;border-radius:99px;padding:4px 8px;color:#ccc}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.why-item{display:flex;gap:15px;padding:22px;border:1px solid var(--line);border-radius:14px;background:#111}
+.check{width:30px;height:30px;flex:0 0 30px;border-radius:50%;background:var(--yellow);color:#000;display:grid;place-items:center;font-weight:900}
+.why-item h3{font-size:17px}.why-item p{font-size:13px;color:#999;margin-top:3px}
+.cta{padding:70px 0;background:var(--yellow);color:#000}
+.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}.cta h2{max-width:650px}.cta p{margin-top:8px;color:#292000}
+.cta .btn{background:#000;color:#fff;border-color:#000}
+.faq{background:#0b0b0b}
+.faq-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+details{border:1px solid var(--line);border-radius:12px;background:#111;padding:17px 19px}
+summary{cursor:pointer;font-weight:750}details p{color:#999;font-size:14px;padding-top:10px}
+footer{border-top:1px solid var(--line);padding:45px 0 85px;background:#080808}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:35px}
+footer p,footer a{color:#999;font-size:14px}.footer-title{color:#fff;font-weight:800;margin-bottom:10px}
+.bottom{border-top:1px solid var(--line);margin-top:30px;padding-top:20px;color:#777;font-size:12px;display:flex;justify-content:space-between}
+.float-actions{position:fixed;right:18px;bottom:18px;z-index:60;display:flex;flex-direction:column;gap:10px}
+.float{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font-size:20px;font-weight:900;box-shadow:0 8px 25px rgba(0,0,0,.35)}
+.float.wa{background:#25D366;color:#fff}.float.call{background:var(--yellow);color:#000}
+@media(max-width:850px){
+ .navlinks,.nav-cta{display:none}.menu{display:block}
+ .hero{min-height:auto;padding:70px 0}.hero-grid{grid-template-columns:1fr;gap:35px}
+ .cards,.fleet-grid{grid-template-columns:1fr 1fr}.dest-grid{grid-template-columns:1fr 1fr}
+ .why-grid,.faq-list{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}
+ .cta-inner{display:block}.cta .btn{margin-top:20px}
+}
+@media(max-width:560px){
+ section{padding:65px 0}h2{font-size:31px}h1{letter-spacing:-1.7px}
+ .form-grid,.cards,.fleet-grid,.dest-grid,.footer-grid{grid-template-columns:1fr}
+ .field.full{grid-column:auto}.trust{gap:15px}
+ .booking-card{padding:20px}.section-head{display:block}.section-head p{margin-top:12px}
+ .logo span{font-size:15px}
+}
+</style>
+</head>
+<body>
+<header>
+ <div class="container nav">
+  <a class="logo" href="#home"><div class="logo-mark">🚕</div><div><span>Amol Tours & Travels</span><small>PUNE • LOCAL • OUTSTATION</small></div></a>
+  <nav class="navlinks"><a href="#services">Services</a><a href="#outstation">Outstation</a><a href="#fleet">Cars</a><a href="#why">Why Us</a><a href="#contact">Contact</a></nav>
+  <a class="nav-cta" href="tel:7875903926">Call Now</a>
+  <button class="menu" aria-label="Menu">☰</button>
+ </div>
+</header>
+
+<main id="home">
+<section class="hero">
+ <div class="container hero-grid">
+  <div>
+   <div class="badge">● Available for Booking</div>
+   <h1>Premium Cab Service<br>from <em>Pune</em></h1>
+   <p>Comfortable Pune local rides, airport transfers and reliable outstation cabs for family, business and leisure travel.</p>
+   <div class="actions">
+    <a class="btn btn-primary" href="#booking">🚕 Book Your Cab</a>
+    <a class="btn btn-outline" href="https://wa.me/917875903926?text=Hi%20Amol%20Tours%20and%20Travels%2C%20I%20want%20to%20book%20a%20cab." target="_blank">💬 WhatsApp Booking</a>
+   </div>
+   <div class="trust">
+    <div><strong>✓ On-Time</strong>Reliable pickup</div>
+    <div><strong>✓ Clean Cars</strong>Comfort first</div>
+    <div><strong>✓ Easy Booking</strong>Call or WhatsApp</div>
+   </div>
+  </div>
+  <div class="booking-card" id="booking">
+   <h2>Quick Booking</h2><p>Send your trip details and we'll get back to you.</p>
+   <form id="bookingForm">
+    <div class="form-grid">
+     <div class="field"><label>Name</label><input id="name" required placeholder="Your name"></div>
+     <div class="field"><label>Phone</label><input id="phone" required type="tel" placeholder="Mobile number"></div>
+     <div class="field"><label>Pickup</label><input id="pickup" required placeholder="Pune / pickup location"></div>
+     <div class="field"><label>Drop</label><input id="drop" required placeholder="Destination"></div>
+     <div class="field"><label>Trip Type</label><select id="trip"><option>One Way</option><option>Round Trip</option><option>Pune Local</option><option>Airport Transfer</option></select></div>
+     <div class="field"><label>Travel Date</label><input id="date" type="date"></div>
+     <div class="field full"><label>Message (optional)</label><input id="message" placeholder="Passengers, car preference, pickup time, etc."></div>
+    </div>
+    <button class="form-btn" type="submit">Send Booking Request on WhatsApp →</button>
+   </form>
+  </div>
+ </div>
+</section>
+
+<section class="services" id="services">
+ <div class="container">
+  <div class="section-head"><div><div class="eyebrow">Our Services</div><h2>Travel your way.</h2></div><p>From a quick city ride to a multi-day family trip, choose the service that fits your journey.</p></div>
+  <div class="cards">
+   <div class="card"><div class="icon">🏙️</div><h3>Pune Local Cab</h3><p>Convenient cab service for meetings, shopping, events, errands and daily travel across Pune.</p></div>
+   <div class="card"><div class="icon">✈️</div><h3>Airport Transfer</h3><p>Pickup and drop service to Pune Airport with a focus on punctual and hassle-free travel.</p></div>
+   <div class="card"><div class="icon">🛣️</div><h3>Outstation Cab</h3><p>One-way and round-trip cab options from Pune to popular destinations across Maharashtra and beyond.</p></div>
+   <div class="card"><div class="icon">👨‍👩‍👧‍👦</div><h3>Family Trips</h3><p>Comfortable travel for family vacations, pilgrimages, weddings and weekend getaways.</p></div>
+   <div class="card"><div class="icon">💼</div><h3>Corporate Travel</h3><p>Professional point-to-point travel for business meetings, events and employee transportation.</p></div>
+   <div class="card"><div class="icon">🌙</div><h3>Early / Late Pickup</h3><p>Need a ride outside regular hours? Contact us with your pickup time and trip details.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="destinations" id="outstation">
+ <div class="container">
+  <div class="section-head"><div><div class="eyebrow">Popular Routes</div><h2>Pune to anywhere.</h2></div><p>Ask us for a quote for your destination. Custom routes and longer journeys are welcome.</p></div>
+  <div class="dest-grid">
+   <div class="dest">Pune → Mumbai<span>City & Airport</span></div>
+   <div class="dest">Pune → Lonavala<span>Weekend getaway</span></div>
+   <div class="dest">Pune → Mahabaleshwar<span>Hill station</span></div>
+   <div class="dest">Pune → Shirdi<span>Pilgrimage</span></div>
+   <div class="dest">Pune → Nashik<span>City / pilgrimage</span></div>
+   <div class="dest">Pune → Kolhapur<span>One way / round trip</span></div>
+   <div class="dest">Pune → Goa<span>Long distance</span></div>
+   <div class="dest">Pune → Other Cities<span>Tell us your destination</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="fleet" id="fleet">
+ <div class="container">
+  <div class="section-head"><div><div class="eyebrow">Choose Your Ride</div><h2>Comfort for every trip.</h2></div><p>Vehicle availability can vary by date and route. Contact us for the latest options and quote.</p></div>
+  <div class="fleet-grid">
+   <div class="fleet-card"><div class="car-visual">🚗</div><div class="fleet-body"><h3>Sedan</h3><p>Ideal for couples, small families and business travel.</p><div class="tags"><span class="tag">Comfort</span><span class="tag">1–4 Passengers</span><span class="tag">AC</span></div></div></div>
+   <div class="fleet-card"><div class="car-visual">🚙</div><div class="fleet-body"><h3>SUV</h3><p>Extra space for families, luggage and longer journeys.</p><div class="tags"><span class="tag">Spacious</span><span class="tag">1–6 Passengers</span><span class="tag">AC</span></div></div></div>
+   <div class="fleet-card"><div class="car-visual">🚐</div><div class="fleet-body"><h3>Innova / Similar</h3><p>Comfortable option for groups and extended outstation trips.</p><div class="tags"><span class="tag">Family</span><span class="tag">Group Travel</span><span class="tag">AC</span></div></div></div>
+  </div>
+ </div>
+</section>
+
+<section id="why">
+ <div class="container">
+  <div class="section-head"><div><div class="eyebrow">Why Amol Tours & Travels</div><h2>Simple, dependable travel.</h2></div><p>We focus on the things that matter when you're getting into a cab: clear communication, comfort and dependable service.</p></div>
+  <div class="why-grid">
+   <div class="why-item"><div class="check">✓</div><div><h3>Transparent Booking</h3><p>Share your route and trip details before you travel.</p></div></div>
+   <div class="why-item"><div class="check">✓</div><div><h3>Clean & Comfortable</h3><p>Travel in a vehicle suited to your group and luggage.</p></div></div>
+   <div class="why-item"><div class="check">✓</div><div><h3>Pune Based Service</h3><p>Convenient pickup options across Pune and nearby areas.</p></div></div>
+   <div class="why-item"><div class="check">✓</div><div><h3>Easy Communication</h3><p>Call or WhatsApp us for booking, route and availability.</p></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="cta" id="contact">
+ <div class="container cta-inner">
+  <div><div class="eyebrow" style="color:#3b3000">Ready to Travel?</div><h2>Tell us where you're going. We'll help plan the ride.</h2><p>Call or WhatsApp Amol Tours and Travels for your Pune or outstation cab.</p></div>
+  <div class="actions"><a class="btn" href="tel:7875903926">📞 7875903926</a><a class="btn" href="tel:9764039794">📞 9764039794</a></div>
+ </div>
+</section>
+
+<section class="faq">
+ <div class="container">
+  <div class="section-head"><div><div class="eyebrow">FAQ</div><h2>Common questions.</h2></div></div>
+  <div class="faq-list">
+   <details><summary>Do you provide Pune to outstation cabs?</summary><p>Yes. We provide outstation cab service from Pune for one-way and round-trip journeys, subject to vehicle availability.</p></details>
+   <details><summary>Can I book an airport pickup?</summary><p>Yes. Share your flight timing and pickup details with us and we'll coordinate the airport transfer.</p></details>
+   <details><summary>How do I get the fare?</summary><p>Send your pickup point, destination, travel date, trip type and passenger count on WhatsApp for a quote.</p></details>
+   <details><summary>Can I request a specific car?</summary><p>You can tell us your preferred vehicle category. We'll confirm availability for your date and route.</p></details>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="container">
+  <div class="footer-grid">
+   <div><div class="logo"><div class="logo-mark">🚕</div><div><span>Amol Tours & Travels</span><small>PUNE • LOCAL • OUTSTATION</small></div></div><p style="margin-top:14px;max-width:420px">Premium cab service for Pune local travel, airport transfers and outstation journeys.</p></div>
+   <div><div class="footer-title">Services</div><p>Pune Local Cab</p><p>Airport Transfer</p><p>Outstation Cab</p><p>One Way & Round Trip</p></div>
+   <div><div class="footer-title">Contact</div><p><a href="tel:7875903926">7875903926</a></p><p><a href="tel:9764039794">9764039794</a></p><p><a href="https://wa.me/917875903926" target="_blank">WhatsApp Booking</a></p><p>Pune, Maharashtra</p></div>
+  </div>
+  <div class="bottom"><span>© 2026 Amol Tours and Travels. All rights reserved.</span><span>Pune Cab • Outstation Taxi</span></div>
+ </div>
+</footer>
+
+<div class="float-actions">
+ <a class="float wa" href="https://wa.me/917875903926?text=Hi%20Amol%20Tours%20and%20Travels%2C%20I%20want%20to%20book%20a%20cab." target="_blank" aria-label="WhatsApp">◉</a>
+ <a class="float call" href="tel:7875903926" aria-label="Call">☎</a>
+</div>
+
+<script>
+document.getElementById('bookingForm').addEventListener('submit', function(e){
+ e.preventDefault();
+ const name=document.getElementById('name').value.trim();
+ const phone=document.getElementById('phone').value.trim();
+ const pickup=document.getElementById('pickup').value.trim();
+ const drop=document.getElementById('drop').value.trim();
+ const trip=document.getElementById('trip').value;
+ const date=document.getElementById('date').value || 'Not specified';
+ const message=document.getElementById('message').value.trim() || 'None';
+ const text=`Hi Amol Tours and Travels,%0A%0AI want to book a cab.%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0APickup: ${encodeURIComponent(pickup)}%0ADestination: ${encodeURIComponent(drop)}%0ATrip Type: ${encodeURIComponent(trip)}%0ADate: ${encodeURIComponent(date)}%0AAdditional details: ${encodeURIComponent(message)}`;
+ window.open('https://wa.me/917875903926?text='+text,'_blank');
+});
+</script>
+</body>
+</html>
